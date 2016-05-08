@@ -11,7 +11,7 @@ DEGI.r requires 2 inputs: a gct file (gene expression data) and a cls file (clas
 
 DEGI.r will output a list of p-values along with the name of the gene.
 
-## Input Options for GEED:
+## Input Options for DEGI:
 
 * gctfile - the name of the gene expression data file (Ex: "all_aml_train.gct")
 * clsfile - the name of the class label data file (Ex: "all_aml_train.cls")
