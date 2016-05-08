@@ -5,7 +5,9 @@ Author: Calvin Rhodes
 The tool that identifies differential expressed genes from a GCT file of gene expressions is called DEGI. DEGI stands for **D**ifferentially **E**xpressed **G**ene **I**dentifier.
 
 ## General
-DEGI.r will take gene expression data and class label data, and a pre-defined geneset to calculate a gene set enrichment analysis value.
+DEGI.r will take gene expression data and class label data and identify genes that are differentially expressed across classes.
+
+DEGI.r will do this by calculating a 2 sample t test statistic across classes, then running a resampling procedure to calculate the appropriate p-value. The p-values are then corrected using the BH procedure to control the false discovery rate (FDR) in multiple hypothesis testing.
 
 DEGI.r requires 2 inputs: a gct file (gene expression data) and a cls file (class label data, with 0's defining one class and 1's defining the other class). The code will run after loading the function from the DEGI.r file. Be warned! The code is very slow - this is what happens when you have a resampling procedure that requires a t-test for every resampling.
 
