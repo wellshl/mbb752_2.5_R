@@ -1,8 +1,8 @@
-# Project DEGC.r
+# Project DEGI.r
 
 Author: Calvin Rhodes
 
-The tool that identifies differential expressed genes from a GCT file of gene expressions is called DEGC. DEGC stands for **D**ifferentially **E**xpressed **G**ene **C**alculator.
+The tool that identifies differential expressed genes from a GCT file of gene expressions is called DEGC. DEGC stands for **D**ifferentially **E**xpressed **G**ene **I**dentifier.
 
 http://www.broadinstitute.org/cancer/software/genepattern/modules/docs/ComparativeMarkerSelection/10
 
