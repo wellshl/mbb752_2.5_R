@@ -2,7 +2,7 @@
 
 Author: Calvin Rhodes
 
-The tool that calculates the level of gene expression given pre-defined data sets is called GEED. GEED stands for **G**ene **E**xpression **E**nrichment calculator given pre-defined **D**ata sets.
+The tool that identifies differential expressed genes from a GCT file of gene expressions is called DEGC. DEGC stands for **D**ifferentially **E**xpressed **G**ene **C**alculator.
 
 http://www.broadinstitute.org/cancer/software/genepattern/modules/docs/ComparativeMarkerSelection/10
 
