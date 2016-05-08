@@ -9,7 +9,7 @@ DEGI.r will take gene expression data and class label data, and a pre-defined ge
 
 DEGI.r requires 2 inputs: a gct file (gene expression data) and a cls file (class label data, with 0's defining one class and 1's defining the other class). The code will run after loading the function from the DEGI.r file. Be warned! The code is very slow - this is what happens when you have a resampling procedure that requires a t-test for every resampling.
 
-DEGI.r will output a list of p-values along with the name of the gene.
+DEGI.r will output a list of p-values alongside the names of the genes.
 
 ## Input Options for DEGI:
 
