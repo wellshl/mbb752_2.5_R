@@ -27,7 +27,7 @@ DEGI <- function (gctfile, clsfile) {
   #Correct the pVals: BH for MHT
   pVals$pV.adjust <- p.adjust(pVals$pV, method = "BH")
   sig.genes <- pVals$Name[pVals$pV.adjust <= 0.05]
-  return ()
+  return (sig.genes)
 }
 
 DEGI ("all_aml_train.gct", "all_aml_train.cls")
