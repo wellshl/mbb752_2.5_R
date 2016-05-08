@@ -2,7 +2,7 @@
 
 Author: Calvin Rhodes
 
-The tool that identifies differential expressed genes from a GCT file of gene expressions is called DEGC. DEGC stands for **D**ifferentially **E**xpressed **G**ene **I**dentifier.
+The tool that identifies differential expressed genes from a GCT file of gene expressions is called DEGI. DEGI stands for **D**ifferentially **E**xpressed **G**ene **I**dentifier.
 
 ## General
 DEGI.r will take gene expression data and class label data, and a pre-defined geneset to calculate a gene set enrichment analysis value.
