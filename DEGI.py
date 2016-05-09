@@ -32,7 +32,10 @@ def DEGI(gctfile,clsfile,number):
         label=label.read().splitlines()
         label=label[2].split() #list of class labels
 
+    #initialize empty list for p-values
     pvals=[]
+
+    #first, caluclate difference in means with original labels
     for i in range(0,len(gct_genes)):
         class0=[]
         class1=[]
@@ -44,7 +47,9 @@ def DEGI(gctfile,clsfile,number):
         mean0=sum(class0)/len(class0)
         mean1=sum(class1)/len(class1)
         null_diff=abs(mean0-mean1)
-        
+
+        #then, calculate difference in means with permutated labels
+        #p-value is determined by the proportion of permutated differences that are less than the original difference
         greater=0.
         for k in range(0,number):
             label_shuffle=numpy.random.permutation(label)
@@ -62,6 +67,7 @@ def DEGI(gctfile,clsfile,number):
                 greater+=1.
         pvals.append(greater/number)
 
+    #correct for multiple hypothesis tests using benjamini-hochberg
     bh=smm.multipletests(pvals,alpha=0.05,method='fdr_bh')
     bh_sig=bh[0]
     bh_pvals=bh[1].astype(str)
