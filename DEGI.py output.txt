@@ -1,0 +1,38 @@
+PROCHOLECYSTOKININ PRECURSORis differentially expressed.
+The adjusted p-value is 0.0
+"MDM2 Mouse double minute 2, human homolog of; p53-binding protein"is differentially expressed.
+The adjusted p-value is 0.0
+EEF1A1 Translation elongation factor 1-alpha-1is differentially expressed.
+The adjusted p-value is 0.0
+"Gal beta-1,3 GalNAc alpha-2,3 sialyltransferase (ST3Gal II) mRNA"is differentially expressed.
+The adjusted p-value is 0.0
+"TNF receptor associated factor 5 mRNA, partial cds"is differentially expressed.
+The adjusted p-value is 0.0
+"ARG2 Arginase, type II (non-hepatic)"is differentially expressed.
+The adjusted p-value is 0.0
+Transcription factor ERF-1 mRNAis differentially expressed.
+The adjusted p-value is 0.0
+CRHBP Corticotropin releasing hormone-binding proteinis differentially expressed.
+The adjusted p-value is 0.0
+"DPP4 Dipeptidylpeptidase IV (CD26, adenosine deaminase complexing protein 2)"is differentially expressed.
+The adjusted p-value is 0.0
+YRRM1is differentially expressed.
+The adjusted p-value is 0.0
+MT1L Metallothionein 1Lis differentially expressed.
+The adjusted p-value is 0.0
+HD Huntingtin (Huntington disease)is differentially expressed.
+The adjusted p-value is 0.0
+HH2A/c geneis differentially expressed.
+The adjusted p-value is 0.0
+Insulin-Like Growth Factor 2is differentially expressed.
+The adjusted p-value is 0.0
+PBX2 mRNAis differentially expressed.
+The adjusted p-value is 0.0
+RING3 PROTEINis differentially expressed.
+The adjusted p-value is 0.0
+"GNAZ Guanine nucleotide binding protein (G protein), alpha z polypeptide"is differentially expressed.
+The adjusted p-value is 0.0
+"Proto-Oncogene Ets-1, Alt. Splice 2"is differentially expressed.
+The adjusted p-value is 0.0
+Interferon beta 1 gene extracted from Gene for human fibroblast interferon beta 1is differentially expressed.
+The adjusted p-value is 0.0

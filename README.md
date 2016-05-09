@@ -1,29 +1,25 @@
-# Project DEGI.r
+# Title: DEGI.py  
+Purpose: A tool that identifies differentially expressed genes from a GCT file  
+Created Date: 08 May 2016  
+Created By: Heather Wells  
 
-Author: Calvin Rhodes
+## Usage:  
+```
+python DEGI.py -g <gene expression gct file> -c <class label file> -n <number of permutations>
+```
+## Example:  
+```
+python DEGI.py -g all_aml_train.gct -c all_aml_train.cls -n 1000
+```
 
-The tool that identifies differential expressed genes from a GCT file of gene expressions is called DEGI. DEGI stands for **D**ifferentially **E**xpressed **G**ene **I**dentifier.
+## Notes:  
+ * Requires gene expression input file in GCT format as well as class label file in CLS format.  
+ * Optionally accepts user-specified number of permutations for permutation test. If none is specified, the default is 200.  
+ * Returns a list of differentially expressed gene names as well as adjusted p-values. 
 
-## General
-DEGI.r will take gene expression data and class label data and identify genes that are differentially expressed across classes.
-
-DEGI.r will do this by calculating a 2 sample t test statistic across classes, then running a resampling procedure to calculate the appropriate p-value. The p-values are then corrected using the BH procedure to control the false discovery rate (FDR) in multiple hypothesis testing.
-
-DEGI.r requires 2 inputs: a gct file (gene expression data) and a cls file (class label data, with 0's defining one class and 1's defining the other class). The code will run after loading the function from the DEGI.r file. Be warned! The code is very slow - this is what happens when you have a resampling procedure that requires a t-test for every resampling.
-
-DEGI.r will return a list of differentially expressed genes among the two classes (\alpha = 0.05).
-
-## Input Options for DEGI:
-
-* gctfile - the name of the gene expression data file (Ex: "all_aml_train.gct")
-* clsfile - the name of the class label data file (Ex: "all_aml_train.cls")
-
-## Input Example
+## General  
+DEGI.py uses a permutation test to determine differential expression of genes between two phenotype classes. The difference in mean expression between the two classes is calculated first. Then, the class labels are randomly permutated a large number of times and the difference in mean expression between the two random classes is calculated for each permutation. A p-value calculated by determining the proportion of random permutations in which the original true difference in means is larger than the permutatated difference in means. This process is repeated for each gene. P-values are adjusted for multiple hypothesis testing using the Benjamini Hochberg method. If the adjusted p-value is less than the significance level of 0.05, the name of the gene is returned along with the adjusted p-value.
 
 All code is based off of the Broad Institute's Comparative Marker Selection:
 http://www.broadinstitute.org/cancer/software/genepattern/modules/docs/ComparativeMarkerSelection/10. Our gctfile and clsfile are derived from the training examples used in Comparative Marker Selection; the two class labels are ALL (acute lymphocytic leukemia) and AML (acute myelogenous leukemia).
-
-```{r}
-DEGI("all_aml_train.gct", "all_aml_train.cls")
-```
 
