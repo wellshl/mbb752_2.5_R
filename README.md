@@ -14,6 +14,8 @@ DEGI.py uses a permutation test to determine differential expression of genes be
 All code is based off of the Broad Institute's Comparative Marker Selection:
 http://www.broadinstitute.org/cancer/software/genepattern/modules/docs/ComparativeMarkerSelection/10. Our gctfile and clsfile are derived from the training examples used in Comparative Marker Selection; the two class labels are ALL (acute lymphocytic leukemia) and AML (acute myelogenous leukemia).  
 
+An R tool that accomplishes the same task can be found [here](https://github.com/calvinrhodes/mbb752_2.5_R)
+
 ## Usage:  
 ```
 python DEGI.py -g <gene expression gct file> -c <class label file> -n <number of permutations>
